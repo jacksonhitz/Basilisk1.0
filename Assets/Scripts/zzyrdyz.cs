@@ -5,14 +5,19 @@ using UnityEngine;
 public class zzyrdyz : MonoBehaviour
 {
     // Just a test
-    void Start()
-    {
-        
-    }
+   public string menuName;
+   public bool open;
+   
+   public void Open()
+   {
+       open = true;
+       gameObject.SetActive(true);
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+   }
+
+   public void Close()
+   {
+       open = false;
+       gameObject.SetActive(false);
+   }
 }
